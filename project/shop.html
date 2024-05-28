@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduJam</title>
+    <link rel="icon" href="./images/log.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+    <body>
+   
+
+    
+    <section class="shop">
+        <div class="flex-container shopping-cart">
+            <div class="column flex-1 certificate w-50">
+                <div class="title  title1" >
+                    <div class="text-center title-congrat hide--mobile">
+                        Once you complete a course, you will  <br> be able to claim your Certification!
+                    </div>
+                    <div class="hide--mobile">
+                        <div class="column flex-1">
+                            <div class="image" > <img src="./images/certifiedd.jpg" alt=""></div>
+                            <div class="certificate-description text-center">
+                                <div><i  style="color: rgb(234, 223, 71);" class="fa-solid fa-check"></i>  Highlight your skills to potential employers </div>
+                                <div><i  style="color: rgb(234, 223, 71);" class="fa-solid fa-check"></i>   Share your abilities on professional social media  </div>
+                                <div><i  style="color: rgb(234, 223, 71);" class="fa-solid fa-check"></i>  Show your current employer your initiative  and drive to learn </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title  title2"  style="display: none;">
+                    <div class="text-center title-congrat hide--mobile" style="padding-top: 50px;">
+                        Premium Users get
+                         <br>special benefits!
+                    </div>
+                    <div class="hide--mobile" id=" Premium_Learning ">
+                        <div class="column flex-1">
+                            <div class="image" style="color: rgb(234, 223, 71);
+                            width: 100px;
+                            height: 100px;
+                            display: flex;
+                            padding-left: 280px;
+                            align-items: center;
+                            justify-content: center;
+                        " > <i style="color: rgb(234, 223, 71); font-size: 80px;  " class="fa-solid fa-crown"></i></div>
+                            <div class="certificate-description text-center">
+                                <div><i  style="color: rgb(234, 223, 71);" class="fa-solid fa-check"></i> Remove all Adverts so you can enjoy distraction free-learning! </div>
+                                <div><i  style="color: rgb(234, 223, 71);" class="fa-solid fa-check"></i>   Get Full Access to CV Builder Features  </div>
+                                <div><i  style="color: rgb(234, 223, 71);" class="fa-solid fa-check"></i>  Receive Exclusive Monthly Discounts </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column flex-1 w-50 stepper">
+                <div class="justify-content-center column center get-certificate-step get-certificate"  >   
+                    <div>
+                        <div class="step-title mb-40 hide--mobile" style="
+                        padding: 40px;
+                    ">  So, start learning now, and get closer to earning your Certification! </div>
+                    </div>
+                    <div class="button-wrapper" style="
+                    padding: 40px;
+                ">
+                        <div class="button primary-button mb-20">
+                            <div class="w-100" ><a style="color: rgb(255, 255, 255);" href="./courses.php">Continue Learning</a></div>
+                        </div>
+                        <div style="
+                        margin: 20px;
+                    "></div>
+                        <div class="button primary-button premium"style="background: #F49B29;"> 
+                            <div class="w-100" > <a id="premiumLearningLink" style="color: rgb(255, 255, 255);" href="#Premium_Learning ">Premium Learning</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="justify-content-center column center get-certificate-step get-certificate-stepps" style="padding-top: 50px; display: none;" >
+                    <div>
+                        <div style="display: flex; justify-content: space-between;" class="payment_icon">
+                            <div>
+                                <i style="padding-left: 30px;    " class="fa-solid fa-crown"></i>
+                                <h4 style="color: rgb(200, 133, 8);">chose offer</h4>
+                            </div>
+                            <div>
+                                <i style="padding-left: 30px;  " class=" fa-regular fa-credit-card"></i>
+                                <h4>Payment</h4>
+                            </div>
+                    </div>
+                    <hr class="hr_payment" >
+                    </div>
+                    <div class="shose_premium">
+                        <h3 style="padding: 30px;">So, what's the best Premium offer for you?</h3>
+                        <div style="display: flex; justify-content: space-between;" >
+                            <div class="container_shope ">
+                                <h4>EduJam Premium Monthly</h4>
+                                <h6>(pay each month)</h6>
+                                <div class="prix">7.99 $</div>
+                            </div>
+                            <div class="container_shope ">
+                                <h4>EduJam Premium Yearly</h4>
+                                <h6>(pay each year)</h6>
+                                <div class="prix">79 $</div>
+                            </div>
+                        </div>
+                        <div class="button primary-button premium"style="background: #F49B29;  margin: 30px;">
+                            <div ><a class="nextbut">Next</a></div>
+                        </div>
+                        
+                    </div>
+                    <div  class="methode_de_pay" style="display: none;">
+                        <h3>What’s the easiest way for you to pay?</h3>
+                        <div class="credit_debit_pay">
+                            <a href="./payer.html" style="color: rgb(0, 0, 0);"><h4>Credit / Debit Card / PayPal</h4></a>
+                            <div style="display: flex;">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                                <i class="fa-brands fa-cc-visa"></i>
+                                <i class="fa-brands fa-cc-paypal"></i>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Récupérer les éléments nécessaires
+            const title1 = document.querySelector('.title1');
+            const title2 = document.querySelector('.title2');
+            const getCertificate = document.querySelector('.get-certificate');
+            const getCertificateStepps = document.querySelector('.get-certificate-stepps');
+            const premiumLearningLink = document.getElementById('premiumLearningLink');
+    
+            // Ajouter un écouteur d'événements sur le lien Premium Learning
+            premiumLearningLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Empêcher le comportement par défaut du lien
+    
+                // Modifier les styles des éléments en conséquence
+                title1.style.display = 'none';
+                title2.style.display = 'block';
+                getCertificate.style.display = 'none';
+                getCertificateStepps.style.display = 'block';
+            });
+        });
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Récupérer tous les éléments avec la classe container_shope
+        const containers = document.querySelectorAll('.container_shope');
+
+        // Parcourir tous les éléments et ajouter un écouteur d'événements à chacun
+        containers.forEach(container => {
+            container.addEventListener('click', function(event) {
+                // Empêcher la propagation de l'événement de clic aux éléments parents
+                event.stopPropagation();
+
+                // Supprimer la classe 'active' de tous les autres éléments
+                containers.forEach(c => c.classList.remove('active'));
+
+                // Ajouter la classe 'active' à l'élément cliqué
+                container.classList.add('active');
+            });
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".nextbut").click(function(){
+            $(".shose_premium").css("display", "none");
+            $(".methode_de_pay").css("display", "block");
+            $(".hr_payment").css("border-color","rgb(200, 133, 8)");
+            $(".payment_icon").css("color","rgb(200, 133, 8)");
+        });
+    });
+</script>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   

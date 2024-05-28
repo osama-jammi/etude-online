@@ -1,0 +1,142 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+/* Main Container */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navigation */
+.nav {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav__parent_div {
+    text-align: center;
+}
+
+.nav__parent_div h5 {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Element Container */
+.element {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="text"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Buttons */
+button,
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Content and Chapter Sections */
+.chapter,
+.content {
+    margin-bottom: 20px;
+}
+
+.content {
+    padding-left: 20px;
+    border-left: 2px solid #ddd;
+}
+
+/* Course Form */
+.course form {
+    display: flex;
+    flex-direction: column;
+}
+
+.course form table {
+    width: 100%;
+}
+
+.course form table th {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.course form table th,
+.course form table td {
+    border: none;
+}
+
+.course form table td {
+    padding: 10px 0;
+}
+
+.course form table input,
+.course form table textarea,
+.course form table select {
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.course form table button {
+    align-self: center;
+}

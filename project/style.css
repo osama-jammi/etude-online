@@ -1,0 +1,1462 @@
+* {
+  font-family: "Noto Serif", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.size_back_header{
+min-height: 100vh;
+}
+.header {
+  
+  width: 100%;
+}
+.headerr {
+  min-height: 15vh;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+nav img {
+  width: 150px;
+}
+nav li i {
+  color: #6ac0ee;
+}
+
+.search-container{
+width: 500px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px; 
+font-size: 16px; 
+transition: border-color 0.3s ease; 
+}
+.search-container input{
+  width: 480px;
+  background-color: transparent;
+  font-size: 16px; 
+  transition: border-color 0.3s ease; 
+  border-radius: 5px; 
+  border: none;
+  outline: none;
+}
+
+.search-container input:hover,
+.search-container input:focus {
+  border-color: #0091c7; 
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  text-align: center;
+  color: #fff;
+  width: 90%;
+}
+.text-box h1 {
+  font-size: 48px;
+}
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 14px;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+  color: #fff;
+}
+nav .fa {
+  display: none;
+}
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: -800px;
+    right: 0px;
+    text-align: left;
+    z-index: 2;
+    transition: 0.7s;
+  }
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
+
+/* course */
+
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+p {
+  color: #777;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  flex-basis: 16%;
+  background-color: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  width: 180px;
+  margin-bottom: 40px;
+}
+.course-col h5{
+  color: #000;
+  padding: 3px;
+}
+
+.course-col h6{
+  color: #525658;
+  padding: 2px;
+}
+.course-col h6:hover{
+  color: #007bff;
+}
+h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  
+}
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* campus */
+
+.campus {
+  background-color: #f9f9f9;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  border-radius: 20px;
+}
+.campus-col {
+  display: flex;
+  width:  400px ;
+  height: 150px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.3) ;
+}
+.campus-col img {
+    display: flex;
+}
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.layer:hover {
+  background: rgba(167, 218, 226, 0.7);
+}
+.layer h3 {
+  width: 100%;
+  font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+/* facilities */
+.facilities {
+  margin-top: 40px;
+}
+.facilities a {
+  margin-left: 90px;
+  color: #000;
+
+}
+
+.tab a{
+  margin-left: 115px;
+  margin-right: 25px;
+}
+
+.facilities-col .under{
+    background: #0091c7;
+    border-radius: 2px;
+    bottom: -3px;
+    height: 4px;
+    opacity: 0;
+    position: absolute;
+    transition: left .8s cubic-bezier(.64,.57,.265,1.2);
+    width: 60px;
+}
+
+.facilities a.active, .facilities a:hover{
+  color: #0091c7;
+  border-bottom: 3px solid  #0091c7;
+}
+
+
+
+
+button.slick-prev {
+  position:absolute;
+  background-color:#ffffff; 
+  color:   #0091c7; 
+  border: 1px solid #0091c7 ; 
+  border-radius: 5px; 
+  padding: 10px 15px; 
+  font-size: 16px; 
+  cursor: pointer; 
+
+  /* Ajouter une ombre subtile */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  
+}
+
+
+
+button.slick-prev span.icon-thick- {
+  font-size: 20px; 
+  vertical-align: middle; 
+  margin-right: 5px; 
+}
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permettre le retour à la ligne si nécessaire */
+}
+
+
+/* Style pour la carte */
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 10px;
+  box-sizing: border-box; /* Inclure le padding dans la largeur */
+  margin: 20px;
+}
+
+/* Style pour l'image de la carte */
+.card__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Style pour les informations de la carte */
+.card__info {
+  margin-top: 10px;
+}
+
+/* Style pour la catégorie de la carte */
+.card__top span {
+  font-size: 14px;
+  color: #4c4b4b;
+}
+
+/* Style pour le titre de la carte */
+.card__top h3 {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #333;
+}
+
+/* Style pour la durée et le nombre d'apprenants */
+.card_duration {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Style pour la partie inférieure de la carte */
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Style pour les liens "More Info" et "Start Learning" */
+.card__bottom a {
+  margin: 10px ;
+  padding: 8px 16px;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.card__bottom a:nth-child(2){
+  background-color: #246a2f;
+  color: white;
+} 
+
+/* Style au survol des liens */
+.card__bottom a:hover {
+  background-color: #007399;
+}
+.explore{
+  position: absolute;
+  transform: translate(240%, 50%); 
+  text-align: center;
+}
+
+.explore button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Animation de transition */
+  border: 1px solid #000000;
+
+}
+
+/* Style lorsque le bouton est survolé */
+.explore button:hover {
+  background-color: green;
+  color: black;
+}
+
+
+
+/* tetimonials */
+
+.careers {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+  text-align: center;
+  
+}
+
+.careers ul li a {
+  border: 1px solid #b3bdc0;
+  border-radius: 26px;
+  color: #5d676e;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  margin-right: 12px;
+  padding: 16px 24px 15px 22px;
+  transition: all .3s ease-in;
+}
+
+.careers p {
+  padding: 0;
+  margin-bottom: 50px;
+}
+.careers h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+.careers h4{
+  color: #246a2f;
+  padding-top: 20px;
+  transition: color 0.25s ease-in;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  transition: all .25s ease-in;
+}
+
+.careers ul li a:hover{
+  color: #007399;
+  background-color: #e8f4f9;
+}
+
+.careers h4:hover {
+  padding-bottom: 5px; /* Ajoute de l'espace sous le texte au survol */
+  cursor: pointer; /* Change le curseur en pointeur au survol */
+}
+
+/* call to action */
+
+
+footer{
+  background-color: #0c4767;
+}
+
+
+
+
+body{
+  background-color: #ffffff;
+}
+
+
+.crumb {
+  color: var(--breadcrumb-blue);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 35px;
+  text-decoration: none;
+}
+
+.crumb ul {
+  display: flex;
+}
+.crumb li {
+  white-space: nowrap;
+}
+
+.crumb a {
+  color: var(--breadcrumb);
+  margin-right: 17px;
+
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  transition: all .25s ease-in;
+}
+
+.crumb span {
+  text-decoration: underline;
+}
+
+.intro.intro__stats {
+  display: flex;
+  align-items: unset;
+  right: 0;
+  padding: 30px 0 30px 18px;
+}
+.intro h1 {
+  margin: 0 0 15px;
+}
+.intro p {
+  font-size: 16px;
+  line-height: 22px;
+  padding-right: 26px;
+}
+
+.stats li, .stats li:before {
+  align-items: center;
+  display: flex;
+}
+
+.stats i {
+  color:#0091c7 ;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.stats strong{
+  color: #1788ae !important;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+.stats li {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 769px){
+.stats li, .stats li:before {
+    align-items: center;
+    display: flex;
+}
+
+.stats li {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 769px) {
+  .stats {
+    background: transparent linear-gradient(90deg, #ecf4fa, rgba(229, 245, 234, 0)) 0 0 no-repeat padding-box;
+    border: 1px solid #1788ae;
+    border-radius: 12px;
+    height: 168px;
+    overflow: hidden;
+    padding: 30px 0 30px 18px;
+    position: relative;
+    width: 340px;
+}
+}
+
+ul {
+  list-style: none;
+}
+
+@media (min-width: 769px){
+.stats li, .stats li:before {
+    align-items: center;
+    display: flex;
+}
+}
+
+@media (min-width: 769px){
+.stats li {
+    color: var(--grey);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+}
+
+@media (min-width: 769px){
+.stats li strong {
+    color: var(--intro-blue);
+    font-weight: 900;
+    margin-right: 5px;
+}
+}
+
+.related {
+  padding: 40px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour le titre de la section */
+.related h2 {
+  font-size: 24px;
+  color: #333;
+  text-align:left;
+  margin-bottom: 20px;
+}
+
+/* Style pour le sous-titre dans le titre */
+.related h2 span {
+  color: #007bff;
+}
+
+/* Style pour les listes des sujets */
+.related__topics {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style pour les rangées de sujets */
+.related__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Style pour chaque élément de sujet */
+.related__row li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #d1e5fd;
+  border-radius: 5px;
+}
+
+/* Style pour les liens des sujets */
+.related__row li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Style pour le bouton "Explore More" */
+.related button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Effet de survol pour les liens des sujets */
+.related__row li:hover  {
+  border: 2px solid #007399;
+  color: #007399;
+}
+
+
+.course__benefits  {
+  background: #dae4db url(./images/benefits-bg.png) no-repeat bottom right;
+  margin: 0 auto;
+  max-width: 1182px;
+  padding: 42px 60px;
+}
+.course__benefits li{
+  display: flex;
+}
+.course__benefits li h5{
+  padding: 10px;
+  font-size: larger;
+}
+
+.course__benefits h3{
+  text-align:left;
+  padding: 10px;
+}
+
+.space-between {
+  align-items: center;
+  display: flex;
+}
+
+.course-list{
+  display: flex;
+}
+
+.course-diploma {
+  margin-right: 140px;
+  text-align: center;
+  width: 347px;
+  margin-top: -70px;
+}
+
+
+
+
+
+
+
+
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  background-image:url(./images//premium-header.jpg);
+}
+
+ .premium-header-left {
+    margin: 25px auto 0;
+    text-align: center;
+    width: 10
+}
+
+
+.head-section{
+  background-color: #fff;
+    width: 450px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.premium-header-left {
+    margin: 25px auto 0;
+    text-align: center;
+    width: 100%;
+}
+
+ .premium-header-left h1 {
+  font-size: 5em;
+  font-weight: 700;
+}
+
+ .premium-header-left h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+ .premium-header-right {
+    clear: both;
+    float: none;
+    margin: 35px auto;
+    padding-top: 1px;
+    text-align: center;
+}
+ .premium-header-right .head-section {
+  border-bottom: 1px solid #d2d7dc;
+  height: auto;
+  margin-bottom: 25px;
+
+}
+.premium-header-right .point {
+  margin: 7px 0 0 90px;
+}
+
+.premium-header-right .point .point-title {
+  color: #2d3942;
+  display: inline-block;
+  font-size: 14px;
+  width: 230px;
+}
+
+ a.go-premium:link,  a.go-premium:visited {
+  background-color: #f49b29;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  line-height: 40px;
+  margin: 18px auto 20px;
+  text-align: center;
+  transition: background-color .5s ease;
+  width: 250px;
+}
+.point-title i{
+  padding-left: 3px;
+  color: #31f67a;
+}
+
+
+.social-share-container {
+  display: flex;
+  align-items: center;
+  width: 200px; /* Ajustez la largeur selon vos besoins */
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 200vh;
+}
+
+.social-share-container i {
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.social-share-container i:hover {
+  color: #007bff;
+}
+
+
+.shopping-cart {
+  min-height: calc(100vh - 50.5px);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+ .shopping-cart .certificate {
+  justify-content: center;
+  background: transparent linear-gradient(0deg, #0093C8 0, #000000 100%) 0 0 no-repeat padding-box;
+}
+.w-50 {
+  width: 50%;
+}
+.w-100 {
+  width: 100%;
+}
+
+ .shopping-cart .certificate .title {
+  height: 102px;
+  transition: all .3s ease-in;
+}
+
+.shopping-cart .certificate .title .title-congrat {
+  text-align: center;
+  font: 700 32px / 51px Roboto, sans-serif;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+.flex-container .column {
+  flex-direction: column;
+  height: 700px;
+}
+
+.shopping-cart .image {
+  display: flex;
+  position: relative;
+  margin-top: 40px;
+}
+.shopping-cart .image img {
+  margin: 0 auto;
+  width: 75%;
+}
+
+
+[_nghost-serverApp-c2905233643] .shopping-cart .image img {
+  margin: 0 auto;
+  width: 75%;
+}
+
+@media screen and (max-width: 1460px){
+
+ #mobile.shopping-cart .image img {
+    max-width: 63%;
+}
+}
+
+.shopping-cart .certificate-description {
+  text-align: center;
+  font: 16px / 35px Roboto, sans-serif;
+  letter-spacing: 0;
+  color: #fff;
+  opacity: 1;
+  margin-top: 29px;
+}
+
+.shopping-cart .stepper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.stepper {
+  align-items: center;
+}
+
+.shopping-cart .stepper .step-title {
+  font: 700 16px / 23px Roboto, sans-serif;
+  padding: 0;
+}
+
+.button.primary-button {
+  width: 300px;
+  background: #0094C9 0 0 no-repeat padding-box;
+  border-radius: 3px;
+  padding: 12px 20px 14px;
+  text-align: center;
+  font: 20px / 21px Roboto, sans-serif;
+  letter-spacing: 0;
+  color: #fff;
+}
+
+ .button {
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+
+
+
+/* search */
+
+.search_containaire_cours {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the list item */
+.search_containaire_cours ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Style for the checkbox */
+.search_containaire_cours input[type="checkbox"] {
+  margin-right: 10px;
+  /* Optional: Custom styling for the checkbox */
+}
+
+/* Style for the label */
+.search_containaire_cours label {
+  font-weight: bold;
+}
+
+/* Style for the badge */
+.search_containaire_cours .badge {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+
+.methode_de_pay h3{
+  padding: 20px;
+  padding-top: 50px;
+}
+
+.methode_de_pay .credit_debit_pay{
+  border: 2px solid #0094C9;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+
+.methode_de_pay .credit_debit_pay i{
+  padding-left: 5px;
+  color: #007399;
+  font-size: 40px;
+  padding-top: 10px;
+}
+/* paye */
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Ubuntu');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.payment{
+  background: #f8f8f8;
+  max-width: 360px;
+  margin: 80px auto;
+  height: auto;
+  padding: 35px;
+  padding-top: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.payment h2{
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  color: #0d3c61;
+}
+
+.form .label{
+  display: block;
+  color: #555555;
+  margin-bottom: 6px;
+}
+
+.input{
+  padding: 13px 0px 13px 25px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  outline: none;
+  font-size: 16px;
+  color: #555555;
+}
+
+.card-grp{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item{
+  width: 48%;
+}
+
+.space{
+  margin-bottom: 20px;
+}
+
+.icon-relative{
+  position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+  position: absolute;
+  bottom: 12px;
+  left: 15px;
+  font-size: 20px;
+  color: #555555;
+}
+
+.btn{
+  margin-top: 40px;
+  background: #2196F3;
+  padding: 12px;
+  text-align: center;
+  color: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.payment-logo{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  text-align: center;
+  line-height: 85px;
+}
+
+.payment-logo:before{
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 90px;
+  height: 90px;
+  background: #2196F3;
+  border-radius: 50%;
+}
+
+.payment-logo p{
+  position: relative;
+  color: #f8f8f8;
+  font-family: 'Baloo Bhaijaan', cursive;
+  font-size: 58px;
+}
+
+
+@media screen and (max-width: 420px){
+  .card-grp{
+    flex-direction: column;
+  }
+  .card-item{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .btn{
+    margin-top: 20px;
+  }
+}
+
+
+
+.Explore_courses h4 {
+  color: #b3bdc0;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-bottom: 8px;
+  padding: 0 14px;
+  text-transform: uppercase;
+}
+
+
+.nav__cats  a{
+  padding-left: 10px;
+  color: black;
+}
+
+
+.nav__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__flex h4 {
+  color: #b3bdc0;
+  font-size: 12px;
+  line-height: 1.5em;
+  margin-bottom: 8px;
+  padding: 0 14px;
+  text-transform: uppercase;
+  
+}
+.nav__flex a {
+  color: #007646;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.nav__flex p{
+  font-size: 10px;
+  font-weight: 500;
+}
+.nav__cats {
+  margin-bottom: 0px;
+}
+
+
+
+.Explore_courses, .login_contain{
+  background-color: #ffff;
+  position: fixed;
+  top:120px ;
+  left: 730px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  height: 350px;
+}
+.Explore_courses{
+  top:120px ;
+  left: 730px;
+}
+.login_contain{
+  width: 270px;
+  top:120px ;
+  left: 900px;
+}
+
+
+.Explore_courses .flex ,.login_contain .flex{
+  display: flex;
+}
+.nav__parent_imag{
+  padding: 3px;
+  padding-bottom: 0px;
+  background-color: #ecf2f4;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.nav__parent_div:hover .nav__parent_imag {
+  background-color: #ffff;
+}
+
+.nav__parent-img{
+  width: 25px;
+}
+
+.nav__parent_div{
+  padding: 10px;
+  border-radius: 4px;
+}
+.nav__parent_div:hover{
+  border-left: 4px solid #66d1f1;
+  background-color: #f2f2f2;
+}
+
+
+.nav__parent_account{
+  margin: 10px;
+  width: 50px;
+    left: 10%;
+    position: absolute;
+    transform: translate(-50%);
+    border-radius:50%;
+}
+
+.elemnents h5{
+  padding-top: 7px;
+}
+
+
+.container_shope{
+  width:200px;
+  display: inline;
+  border: 3px solid rgba(99, 99, 99, 0.533);
+  border-radius: 10px;
+}
+.container_shope h4 ,.container_shope h6 { 
+    padding: 20px;
+    padding-left: 30px;
+}
+
+.container_shope .prix{
+    margin-top:9px ;
+    margin-bottom: 9px;
+    background-color: azure;
+    padding-left: 70px;
+    border-radius: 7px;
+}
+.container_shope.active {
+    border-color: rgb(200, 133, 8);
+    box-shadow: 0 0 10px rgba(200, 133, 8, 0.5);
+}
+
+
+.search_containaire_cours , .get_containaire_cours {
+  margin: 0.25%;
+width: 300px;
+overflow-y: auto;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the list item */
+.search_containaire_cours ul li {
+list-style: none;
+margin-bottom: 10px;
+}
+
+.search_containaire_cours .element{
+margin: 10px;
+}
+
+/* Style for the checkbox */
+.search_containaire_cours input[type="checkbox"] {
+margin-right: 10px;
+margin-left: 20px;
+border: 2px #007bff;
+border-radius: 10px;
+background-color: #007bff;
+/* Optional: Custom styling for the checkbox */
+}
+
+.search_containaire_cours input[type="checkbox"]:checked + .element::before {
+background-color: #007bff;
+border-radius: 50%; 
+}
+
+/* Style for the label */
+.search_containaire_cours label {
+font-weight: lighter;
+margin: 0 10px ;
+}
+
+/* Style for the badge */
+.search_containaire_cours .badge {
+background-color:#a8a3a3;
+color: #fff;
+padding: 5px 10px;
+border-radius: 10px;
+font-size: 14px;
+}
+
+
+.l-but{
+  background: #009b5d;
+    border-radius: 8px;
+    color: #fff;
+    display: block;
+    font-weight: 500;
+    padding: 13px 0;
+    text-align: center;
+}
+
+.l-tabs {
+  border: 1px solid #b7c1c4;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.l-tabs .l-tabs__nav {
+  align-items: center;
+  background: #f9fafb;
+  border-bottom: 1px solid #b7c1c4;
+  display: flex;
+  height: 52px;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+
+.l-tabs .l-tabs__nav .l-tabs__title {
+  align-items: center;
+  color: #1581af;
+  cursor: pointer;
+  display: flex;
+  height: 52px;
+  padding: 0 4px;
+  position: relative;
+}
+
+.l-tabs .l-tabs__nav .l-tabs__title span {
+  margin-right: 7px;
+}
+
+.main{
+ margin:20px; padding-right:50px;;
+}
+.main .heade {
+  padding: 10px;
+}
+.main .heade h4{
+  padding-left: 8px;
+}
+.main .heade a{
+    margin-left: 10px;
+  padding-left: 4px;
+  padding-right: 2px;
+  border-radius: 4px;
+  color: #000;
+}
+.main .heade a:hover{
+  border-bottom: 3px solid #1581af;
+}
+.main .heade h2{
+  padding-left: 13px;
+}
+.main .heade h5 {
+  width: 80%;
+  padding-left: 14px;
+  padding-top: 5px;
+}
+
+.main .heade p{
+  width: 90%;
+  padding-left: 14px;
+}
+
+
+.modul{
+  padding-top: 8px;
+  margin-left: 20px; 
+  width:90%
+}
+
+.course_modules span{
+  padding-top: 10px;
+  font-weight: bold;
+}
+.course_modules h4{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #545454;
+}
+.modul_but{
+  display: none;
+}
+
+.course_modules_modul:hover .modul_but{
+  display: block;
+}
+.course_modules_modul:hover .modul{
+  width:68%
+}
+
+
+.chapiter{
+  width: 30%;  border: 2px solid #000;
+  border-radius: 20px; padding:20px; margin:20px;box-shadow: 0 0 50px rgba(160, 159, 158, 0.5);
+}
+
+.chapiter_element{
+  border-radius: 10px;
+  padding: 10px;
+  color: #000;
+}
+
+.chapiter_element a{
+  color: #000;
+}
+
+.chapiter_element:hover{
+  background-color: #f6f6f6; 
+}
+.chapiter_element:hover .text_chapiter{
+  color: #2d8fb1; 
+}
+
+.cours_elment{
+  width: 60%;
+  height: 400px;
+}
+
+.chapiter_element_rout{
+  padding-top: 70px;
+}
+
+#chapiter i{
+  
+  color: #000;
+}
+
+#chapiter i:hover{
+  color: #2487a8; 
+}
+
+.namea {
+  color: #000 !important;
+}
