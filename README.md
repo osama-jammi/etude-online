@@ -108,7 +108,7 @@ graph TB
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/edujam.git
+git clone https://github.com/osama-jammi/etude-online.git
 cd edujam
 
 # Import database
